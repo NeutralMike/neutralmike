@@ -20,6 +20,7 @@ def test(request):
             access_token = content["access_token"]
             request.session["access_token"] = access_token
             request.session["auth"] = True
+            request.session.set_expiry(3600)
             return redirect("http://neutralmike.ru/webim-test/")
         session = vk.Session(access_token=request.session["access_token"])
         api = vk.API(session, v=version)
