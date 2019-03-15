@@ -19,5 +19,6 @@ from django.conf.urls import url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('webim-test/', include('WebimTest.urls'))
+    url(r'^webim-test/', include('WebimTest.urls')),
+    url('', include('neutralmike.urls'))
 ]

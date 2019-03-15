@@ -9,10 +9,9 @@ version = "5.92"
 client_secret = "07T9inWRpysoiRDcxePI"
 
 
-def test(request):
+def index(request):
     friends = None
     self = None
-    code = None
     try:
         if request.session["auth"] is False:
             code = request.GET['code']
