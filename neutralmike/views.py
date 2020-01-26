@@ -3,5 +3,5 @@ from django.shortcuts import render
 # Create your views here.
 
 
-def index(request):
+def home_page_view(request):
     return render(request, "neutralmike.html")

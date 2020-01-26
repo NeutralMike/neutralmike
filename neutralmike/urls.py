@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls import url
+from .views import home_page_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^webim-test/', include('WebimTest.urls')),
-    url('', include('neutralmike.urls'))
+    url(r'^webim-test/', include('WebimTest.urls'), name='webim-test'),
+    url('', home_page_view, name='home')
 ]

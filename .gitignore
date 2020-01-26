@@ -1,6 +1,8 @@
 __pycache__/
 venv/
-local_settings.py
-*.pyc
 .idea
+*.pyc
+
+local_settings.py
 db.sqlite3
+passenger_wsgi.py
