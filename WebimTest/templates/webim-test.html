@@ -7,7 +7,7 @@
 </head>
 <body>
 {% if auth == False %}
-<a href="https://neutralmike.ru/webim-test/vk-auth/" class="btn btn-dark">Авторизоваться</a>
+<a href="vk-auth" class="btn btn-dark">Авторизоваться</a>
 {% else %}
 <span>Вы:<a href="http://vk.com/{{self.domain}}">{{self.first_name}} {{self.last_name}}</span><br/></a>
 <span>Ваши друзья:</span><br/>
